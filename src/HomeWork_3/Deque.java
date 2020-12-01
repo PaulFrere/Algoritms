@@ -113,7 +113,6 @@ public class Deque {
         capacity--;
         return array[tail];
     }
-
     @Override
     public String toString() {
         return "Deque{" +
