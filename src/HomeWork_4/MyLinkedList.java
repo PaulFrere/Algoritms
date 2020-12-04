@@ -15,14 +15,16 @@ public class MyLinkedList<T> implements Iterable<T> {
     }
 
 
-//    public ListIterator<T> listIterator() {
-//        return null;
-//    }
+    public ListIterator<T> listIterator() {
+        return null;
+    }
 
     public MyLinkedList() {
         first = null;
         last = null;
     }
+
+
 
     private class Iter implements Iterator<T> {
         Node current = new Node(null, first);
@@ -259,4 +261,5 @@ public class MyLinkedList<T> implements Iterable<T> {
         }
         return sb.toString();
     }
+
 }
